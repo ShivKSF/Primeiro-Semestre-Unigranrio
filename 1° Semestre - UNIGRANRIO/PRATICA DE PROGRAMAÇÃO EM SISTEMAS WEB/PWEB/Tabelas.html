@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabelas</title>
+
+    <style>
+        table, td, th{
+            border: 1px solid blue; border-collapse: separate;
+            padding: 5px;
+            border-spacing: 5px;
+        }
+
+    </style>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">
+    <h1>Tabelas</h1>
+    <hr>
+    <h3>Tabela simples</h3>
+
+    <table>
+        <tr><!-- 1ª linha-->
+            <td>Linha 1 - Coluna 1</td>
+            <td>Linha 1 - Coluna 2</td>
+            <td>Linha 1 - Coluna 3</td>
+        </tr>
+
+        <tr><!-- 2ª linha-->
+            <td>Linha 2 - Coluna 1</td>
+            <td>Linha 2 - Coluna 2</td>
+            <td>Linha 2 - Coluna 3</td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+    <h3>Tabela com título de coluna e legenda</h3>
+
+    <table>
+        <caption>Tabela de Exemplo</caption>
+        <tr>
+            <th>Título 1</th>
+            <th>Título 2</th>
+            <th>Título 3</th>
+        </tr>
+
+        <tr>
+            <td>Linha 1 - Coluna 1</td>
+            <td>Linha 1 - Coluna 2</td>
+            <td>Linha 1 - Coluna 3</td>
+        </tr>
+
+        <tr>
+            <td>Linha 2 - Coluna 1</td>
+            <td>Linha 2 - Coluna 2</td>
+            <td>Linha 2 - Coluna 3</td>
+        </tr>
+
+        <tr>
+            <td>Linha 3 - Coluna 1</td>
+            <td>Linha 3 - Coluna 2</td>
+            <td>Linha 3 - Coluna 3</td>
+        </tr>
+
+    </table>
+
+    <br>
+    <br>
+    <br>
+
+    <h3>Tabela com cabeçalho, corpo, rodapé e mescla</h3>
+    <table>
+        <thead><!--Cabeçalho da Tabela-->
+            <tr>
+                <th colspan="4">Tabela de Preços</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Seminovos</td>
+                <td>Trompete</td>
+                <td>Trombone</td>
+                <td>Trompa</td>
+            </tr>
+            <tr>
+                <td>R$500,00</td>
+                <td>R$640,00</td>
+                <td>R$650,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4" style="text-align: center;">Visite nossa loja</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

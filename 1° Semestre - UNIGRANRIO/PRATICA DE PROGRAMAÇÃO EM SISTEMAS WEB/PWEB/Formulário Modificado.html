@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <title>Formulário</title>
+        </head>
+        <body>
+            <h1><a name="topo"> Formulário</a></h1>
+            <form method="post" action="mailto:kaique.sousa@unigranrio.br" id="fcontato">
+                <fieldset id="usuario"><legend>Identificação do Usuário</legend>
+                    <p><label for="cnome">Nome: </label>><input type="text" name="tnome" id="cnome" size="50" maxlength="100" autofocus placeholder="Seu nome Completo"></p>
+                    <p><label for="csenha">Senha: </label><input type="password" name="tsenha" id="csenha" size="8" maxlength="8" placeholder="8 dígitos"></p>
+                    <p><label for="cmail">Email: </label><input type="email" name="tmail" id="cmail" size="50" maxlength="50"></p>
+                    <p><label for="ctel">Telefone: </label><input type="tel" name="ttel" id="ctel" size="15" maxlength="15" pattern="\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}$" title="Digite o telefone no formato: (xx)xxxxx-xxxx"></p>
+                    <fieldset id="sexo"><legend>Sexo: </legend>
+                        <input type="radio" name="tsexo" id="cmasc" checked><label for="cmasc">Masculino</label> <br>
+                        <input type="radio" name="tsexo" id="cfem"><label for="cfem">Feminino</label> <br>
+                    </fieldset>
+                    <p><label for="cnasc">Data de Nascimento: </label><input type="date" name="tnasc" id="cnasc"></p>
+                   </fieldset>
+                   <fieldset><legend>Endereço do Usuário</legend>
+                        <p><label for="crua">Endereço:</label> <input type="text" name="trua" id="crua" size="50" maxlength="80" placeholder="Rua, Av. Trav. ..."></p>
+                        <p><label for="cnum">Número: </label><input type="number" name="pnum" id="cnum" min="0" max="99999"></p>
+                        <p><label for="cest">Estado: <select name="test" id="cest">
+                            <optgroup label="Região Sudeste">
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="SP" selected>São Paulo</option>
+                                <option value="MG">Minas Gerais</option>
+                            </optgroup>
+                            <optgroup label="Região Sul">
+                                <option value="PR">Paraná</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                            </optgroup>
+                        </select></p>
+                        <p><label for="ccid">Cidade: </label><input type="text" name="tcid" id="ccid" placeholder="Sua cidade..." list="cidades"></p>
+                            <datalist id="cidades">
+                                <option value="Rio de Janeiro"></option>
+                                <option value="Nova Iguaçu"></option>
+                                <option value="Niterói"></option>
+                                <option value="Duque de Caxias"></option>
+                            </datalist>
+                   </fieldset>
+                   <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+                        <p><label for="curg">Grau de Urgência Mín </label><input type="range" name="turg" id="curg" min="0" max="10" step="2"></p>
+                        <p><label for="cmsg">Mensagem: <textarea name="tmsg" id="cmsg" cols="30" rows="10" placeholder="Digite aqui sua Mensagem:"></textarea></p>
+                    </fieldset>
+                    <input type="submit">
+            </form>
+            <br>
+            <a href="#topo">Clique aqui para voltar para o início</a>
+            <br>
+        </body>
+    </html>

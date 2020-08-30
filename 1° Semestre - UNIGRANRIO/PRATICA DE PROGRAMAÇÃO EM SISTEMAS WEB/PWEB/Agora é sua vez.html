@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabelas</title>
+    <style>
+        table, td, th{
+            border: 1px solid; border-collapse: collapse;
+            padding: 5px;
+            border-spacing: 5px;
+        }
+    </style>
+    </head>
+    <body style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">
+        <h1>Agora é sua vez...</h1>
+        <table>
+            <tbody>
+                <tr>
+                    <th rowspan="3">Autor</th>
+                </tr>
+                <tr>
+                    <th colspan="3">Música</th>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Letra</th>
+                        <th>Cifra</th>
+                    </tr>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td rowspan="4">Chico Buarque</td>
+                </tr>
+                <tr>
+                    <td>A Banda</td>
+                    <th>X</th>
+                    <th>--</th>
+                </tr>
+                <tr>
+                    <td>Beatriz</td>
+                    <th>--</th>
+                    <th>X</th>
+                </tr>
+                <tr>
+                    <td>Choro Bandido</td>
+                    <th>--</th>
+                    <th>X</th>
+                </tr>
+            </tfoot>
+        </table>
+        <br>
+        <br>
+        <h3>Tabela Formatada</h3>
+        <table style="background-color: #eeeebb; border-color: black; width: 600px;">
+            <caption style="caption-side: bottom;">Fonte: Desconhecida</caption>
+            <thead>
+                <tr>
+                    <th colspan="3" style="background-color: #003399; text-align: center; color:white; font-size: 2;">
+                        Tecnologias para Desenvolvimento Web
+                    </th>
+                </tr>
+                <tr style="background-color: #0080c0;">
+                    <th>
+                        Tipo de Tecnologia
+                    </th>
+                    <th colspan="2">
+                        Nome e Empresa de Tecnologia
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2" style="background-color: #0000ff; vertical-align: top; text-align: center;">Script de Cliente</td>
+                    <td style="text-align: right;">Java Script</td>
+                    <td style="text-align: right;">Netscape</td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Active Server Pages</td>
+                    <td style="text-align: right;">Microsoft</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" style="background-color: #0000ff; vertical-align: top; text-align: center;">Script de Cliente</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
